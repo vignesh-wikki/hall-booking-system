@@ -123,7 +123,7 @@ export default function BookForm() {
     };
 
     const res = await axios
-      .post("https://hall-booking-syatem.onrender.com/booking", userDetails, {
+      .post("https://hall-booking-system.onrender.com/booking", userDetails, {
         headers: {
           "Content-Type": "application/json",
         },
