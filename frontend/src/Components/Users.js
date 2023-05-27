@@ -12,7 +12,7 @@ export default function Users() {
   }
   
 useEffect(()=>{
-  const id = axios.delete("http://localhost:5000/deleteuser",del_id)
+  const id = axios.delete("https://hall-booking-system.onrender.com/deleteuser",del_id)
  navigate("/users");
 },[del_id])
   var i = 0;
@@ -21,7 +21,7 @@ useEffect(()=>{
    
   useEffect(() => {
    axios
-      .get("http://localhost:5000/users")
+      .get("https://hall-booking-system.onrender.com/users")
       .then((res) => {
         setUsers(res.data);
       })
