@@ -1,20 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 import Nav from "../Components/Nav";
 import axios from "axios";
 import {useNavigate} from "react-router-dom"
 export default function Users() {
   const navigate = useNavigate();
  const [del_id,setDel_id] = useState(null);
-
+const isMounted = useRef(false);
   const deleteUser = ()=>{
     setDel_id(users.FirstName)
    
   }
   
 useEffect(()=>{
-  const id = axios.delete("https://hall-booking-system.onrender.com/deleteuser",del_id)
+  
+  if (isMounted.current) {
+      const id = axios.delete("https://hall-booking-system.onrender.com/deleteuser",del_id)
  navigate("/users");
+    } else {
+      isMounted.current = true;
+    }
+  
 },[del_id])
+  
   var i = 0;
   const [users, setUsers] = useState([]);
 
