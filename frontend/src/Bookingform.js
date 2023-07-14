@@ -14,7 +14,7 @@ export default function Bookingform() {
     <>
       <Nav />
 
-      <div className=" mt-4 w-full h-full">
+      <div className="m-4 mt-4 h-full">
         <div className=" w-full h-[20rem]">
           <Carousel
             className="rounded-xl"
