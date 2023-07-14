@@ -97,7 +97,7 @@ export default function Bookingform() {
               </CardBody>
             </div>
 
-            <div className="w-[20rem] h-[20rem]">
+            <div className="w-[20rem] h-[23rem]">
             <CardBody className=" h-full w-full shadow bg-white text-center bottom-10 left-72 right-10 top-96 "><p className=" text-lg">
             No grand idea was ever born in a conference, but a lot of foolish ideas have died there.
 
