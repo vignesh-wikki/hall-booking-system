@@ -12,8 +12,8 @@ export default function Nav() {
   return (
     <>
       <div className=" w-full h-[5.4rem] overflow-hidden  flex justify-start align-middle">
-        <NavLink to="/" className="ps-8">
-          <img src={logo} className=" w-24 h-18" alt="logo-icon" />
+        <NavLink to="/" className="ps-8 w-18 h-18">
+          <img src={logo} className="w-full h-full" alt="logo-icon" />
         </NavLink>
         
         <div className=" absolute right-10 top-6 ">
